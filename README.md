@@ -3,7 +3,7 @@
 
 ### Contents
 - [Introduction](#Introduction)
-- [Ad-hoc commands](#Ad-hoc%20commands)
+- [Adhoc commands](#adhoc-commands)
 
 
 ## Introduction
@@ -12,5 +12,5 @@
 -  [Getting started](https://docs.ansible.com/ansible/devel/user_guide/basic_concepts.html)
 -  [First Innevtory](https://docs.ansible.com/ansible/devel/user_guide/intro_inventory.html)
 
-## Ad-hoc commands
+## Adhoc commands
 - 
