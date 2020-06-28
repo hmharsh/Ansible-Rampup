@@ -2,8 +2,9 @@
 # Docker
 
 ### Contents
-- [Introduction](#Introduction)
+- [Introduction](#introduction)
 - [Adhoc commands](#adhoc-commands)
+- [References](#references)
 
 
 ## Introduction
@@ -13,4 +14,11 @@
 -  [First Innevtory](https://docs.ansible.com/ansible/devel/user_guide/intro_inventory.html)
 
 ## Adhoc commands
+- 
+
+## Playbook
+- [run first playbook](https://docs.ansible.com/ansible/latest/network/getting_started/first_playbook.html)
+
+## References
+- https://github.com/ansible/ansible-examples
 - 
