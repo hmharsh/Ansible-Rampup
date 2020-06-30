@@ -39,6 +39,7 @@
 - Require 2 vm in same network
 - Install ansible on 1st (host vm)
 - Make sure python is available on 2nd (remote vm)
+- Setup text editor for ansible yaml (eg for vim add `autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab` in $HOME/.vimrc)
 - Create two users ansible_password and ansible_key in remote vm (without granting sudo access) and make sure st user is accessavle by ssh username and password, and for 2nd user ansible_key generate a new public private key private key parir and try to login here by ssh using private key 
 ### Questions
 - Write a adhoc command to gather facts of localhost using setup module
@@ -98,6 +99,7 @@ Explore: inventory, projects, credentials(machine and vault), template(job and w
 - Dynamic inventory [Working](https://docs.ansible.com/ansible/latest/user_guide/intro_dynamic_inventory.html), [Development](https://docs.ansible.com/ansible/latest/dev_guide/developing_inventory.html) 
 - [Data Manipulation](https://medium.com/opsops/data-manipulation-in-ansible-json-query-769fb34655d4)
 - Testing framework in ansible [Molecule](https://molecule.readthedocs.io/en/latest/)
+- connect remore windows host [doc](https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html), [add_host](https://github.com/hmharsh/Ansible-important-features/blob/master/add%20host.txt)
 ## References
 - https://docs.ansible.com/
 - https://medium.com/@me.sanjeev3d/ansible-configuration-management-945b56eed6d7
