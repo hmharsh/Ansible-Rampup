@@ -53,6 +53,7 @@
 2. Explore remote_src option of copy module
 ```
 - Explore and use following frequently used modules from official Ansible doc
+  - set_fact
   - copy
   - Synopsis
   - file
@@ -63,15 +64,17 @@
   - uri
   - shell/command
   - service
+  - add_host
 
 ## Manage Flow control and more
 -  [conditionals](https://docs.ansible.com/ansible/latest/user_guide/playbooks_conditionals.html) 
 -  [Looping](https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html)
+-  [Filters](https://docs.ansible.com/ansible/latest/user_guide/playbooks_filters.html)
 -  [Task delegation](https://docs.ansible.com/ansible/latest/user_guide/playbooks_delegation.html)
 -  [Include and Import](https://docs.ansible.com/ansible/latest/modules/include_module.html)
 -  [privilege escalation](https://docs.ansible.com/ansible/latest/user_guide/become.html#using-become)
 -  [Jinja templating](https://docs.ansible.com/ansible-container/container_yml/template.html)
-#### Assignnments
+#### Assignnment
 - write a playbook in ansible to install httpd or nginx on remote vm, generate a index.html file which will be hosted later, content of this file should be IP address and hostname of the remote vm (where file will be hosted), copy this file on appropriate path of remote vm and start the service.
 
 
@@ -83,8 +86,17 @@
 ## Ansible GUI 
 - [what is ansible tower](https://www.ansible.com/products/tower)
 - [Ansible tower and AWX](https://www.redhat.com/en/resources/awx-and-ansible-tower-datasheet)
-
-
+#### Assignnment
+- deploy awx container and try to run playbook directly from git to any machine in local network 
+```
+Explore: inventory, projects, credentials(machine and vault), template(job and workflow), Jobs(logging)
+```
+# Advance
+- [Writting python logic in ansible](https://github.com/hmharsh/Ansible-important-features/blob/master/using%20python%20code%20in%20ansible.txt)
+- [Custom modules](https://medium.com/@heenashree2010/create-a-custom-module-with-ansible-python-6285874a09b4#:~:text=Write%20your%20first%20python%20program&text=The%20testing.py%20module%20utility,%2C%20import%20from%20testing.py.&text=This%20will%20import%20all%20the,python%20file%20is%20only%20JSON), [more examples](https://github.com/hmharsh/Ansible-important-features/tree/master/custom_module) check existing moudule from configured path written in both python and powershell
+- Dynamic inventory [Working](https://docs.ansible.com/ansible/latest/user_guide/intro_dynamic_inventory.html), [Development](https://docs.ansible.com/ansible/latest/dev_guide/developing_inventory.html) 
+- [Data Manipulation](https://medium.com/opsops/data-manipulation-in-ansible-json-query-769fb34655d4)
+- Testing framework in ansible [Molecule](https://molecule.readthedocs.io/en/latest/)
 ## References
 - https://docs.ansible.com/
 - https://medium.com/@me.sanjeev3d/ansible-configuration-management-945b56eed6d7
