@@ -65,6 +65,7 @@
   - shell/command
   - service
   - add_host
+  - user/group
 
 ## Manage Flow control and more
 -  [conditionals](https://docs.ansible.com/ansible/latest/user_guide/playbooks_conditionals.html) 
