@@ -4,6 +4,7 @@
 ### Contents
 - [Introduction](#introduction)
 - [Basic implementation](#basic-implementation)
+- [Flow control in playbook](#flow-control-in-playbook)
 - [Way to Implement large Automation](#way-to-implement-large-automation)
 - [Ansible GUI ](#ansible-gui )
 - [References](#references)
@@ -28,6 +29,39 @@
 -  [Ansible connection](https://docs.ansible.com/ansible/latest/user_guide/connection_details.html)
 -  [Ansible Vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html)
 -  [privilege escalation](https://docs.ansible.com/ansible/latest/user_guide/become.html#using-become)
+-  [setup module to gather facts] (https://docs.ansible.com/ansible/latest/modules/setup_module.html)
+-  [Special variables](https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html)
+-  [Ansible actions/Meta](https://docs.ansible.com/ansible/latest/modules/meta_module.html)
+
+
+#### Assignnments
+- write a adhoc command to gather facts of localhost using setup module
+- Write Adhoc command to copy any file to suitable path of remote machine/vm whose IP specified in inventory present in the current directory 
+  ```
+    1. To override values in ansible.cfg for single usecase, copy ansible.cfg to current directory, configure absolute or relative path of inventory in ansible.cfg
+    2. copy module in ansible
+    3. learn to configure the connection from inventory, either connect remote machine by it's ssh username and passsweod or connect by private key of ssh account
+  ```  
+- Write a playbook to create a file in ansible on host machine (where ansible is running), which contain IP address of host machine all this in 1st play of the playbook and 2nd play should copy this file from this host machine to remote machine
+```
+1. check ansible_connection = local // for faster connection on localhost
+2. explore remote_src option of copy module
+```
+- explore and use following frequently used modules from official Ansible doc
+  - copy
+  - Synopsis
+  - file
+  - lineinfile
+  - fetch
+  - path
+  - package
+  - uri
+  - shell/command
+
+## Flow control in playbook
+-   
+
+
 
 ## Way to Implement large Automation
 - [Roles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html)
