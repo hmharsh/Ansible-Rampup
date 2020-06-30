@@ -21,7 +21,7 @@
 -  [Ansible config file precedence](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
 
 
-## basic Implementation 
+## Basic Implementation 
 
 -  [Ad hoc commands](https://www.tutorialspoint.com/ansible/ansible_ad_hoc_commands.htm#:~:text=Ad%20hoc%20commands%20are%20commands,usr%2Fbin%2Fansible'.)
 -  [Run first playbook](https://docs.ansible.com/ansible/latest/network/getting_started/first_playbook.html)
@@ -87,7 +87,7 @@
   copy this file on appropriate path of remote vm and start the service, 
   edit "etc/hosts" of host to access remote server with custom name, 
   check the status code of the newly hosted webpage using URI module get request. 
-3. copy a file from single host present in inventory group called "webserver" to remaining hosts mentioned in inventory in (under all other groups) 
+3. Copy a file from single host present in inventory group called "webserver" to remaining hosts mentioned in inventory in (under all other groups) 
 ```
 
 
