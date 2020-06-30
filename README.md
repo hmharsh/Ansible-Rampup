@@ -91,10 +91,12 @@
 ```
 
 
+
 ## Way to Implement large Automation
 - [Roles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html)
 - [Collections](https://docs.ansible.com/ansible/latest/user_guide/collections_using.html)
 - [Ansible Galaxy](https://docs.ansible.com/ansible/latest/galaxy/user_guide.html)
+- [Best Pratices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html)
 
 ## Ansible GUI 
 - [what is ansible tower](https://www.ansible.com/products/tower)
