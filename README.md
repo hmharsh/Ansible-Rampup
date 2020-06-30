@@ -76,8 +76,19 @@
 -  [Include and Import](https://docs.ansible.com/ansible/latest/modules/include_module.html)
 -  [privilege escalation](https://docs.ansible.com/ansible/latest/user_guide/become.html#using-become)
 -  [Jinja templating](https://docs.ansible.com/ansible-container/container_yml/template.html)
+-  [Input from console](https://docs.ansible.com/ansible/latest/user_guide/playbooks_prompts.html#:~:text=The%20user%20input%20is%20hidden,visible%20by%20setting%20private%3A%20no%20.&text=Prompts%20for%20individual%20vars_prompt%20variables,as%20cron%20or%20Ansible%20Tower).)
 #### Assignnment
-- write a playbook in ansible to install httpd or nginx on remote vm, generate a index.html file which will be hosted later, content of this file should be IP address and hostname of the remote vm (where file will be hosted), copy this file on appropriate path of remote vm and start the service.
+
+```
+1. (If 2 remote vm are available) You are running ansible on host machine 'say 'A', now write a playbook to create 5 different files (named 'a', 'b', 'c', 'd', 'e') on remote machine 'say B' and copy all this files to remote machine 'say C' directly from 'B' to 'C'. 
+2. Write a playbook in ansible to install httpd or nginx on remote vm, 
+  generate a index.html file which will be hosted later, 
+  content of this file should be IP address and hostname of the remote vm (where file will be hosted), 
+  copy this file on appropriate path of remote vm and start the service, 
+  edit "etc/hosts" of host to access remote server with custom name, 
+  check the status code of the newly hosted webpage using URI module get request. 
+3. copy a file from single host present in inventory group called "webserver" to remaining hosts mentioned in inventory in (under all other groups) 
+```
 
 
 ## Way to Implement large Automation
@@ -94,12 +105,13 @@
 Explore: inventory, projects, credentials(machine and vault), template(job and workflow), Jobs(logging)
 ```
 # Advance
+- [Host pattern](https://docs.ansible.com/ansible/latest/user_guide/intro_patterns.html)
 - [Writting python logic in ansible](https://github.com/hmharsh/Ansible-important-features/blob/master/using%20python%20code%20in%20ansible.txt)
 - [Custom modules](https://medium.com/@heenashree2010/create-a-custom-module-with-ansible-python-6285874a09b4#:~:text=Write%20your%20first%20python%20program&text=The%20testing.py%20module%20utility,%2C%20import%20from%20testing.py.&text=This%20will%20import%20all%20the,python%20file%20is%20only%20JSON), [more examples](https://github.com/hmharsh/Ansible-important-features/tree/master/custom_module) check existing moudule from configured path written in both python and powershell
 - Dynamic inventory [Working](https://docs.ansible.com/ansible/latest/user_guide/intro_dynamic_inventory.html), [Development](https://docs.ansible.com/ansible/latest/dev_guide/developing_inventory.html) 
 - [Data Manipulation](https://medium.com/opsops/data-manipulation-in-ansible-json-query-769fb34655d4)
 - Testing framework in ansible [Molecule](https://molecule.readthedocs.io/en/latest/)
-- connect remore windows host [doc](https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html), [add_host](https://github.com/hmharsh/Ansible-important-features/blob/master/add%20host.txt)
+- Connect remote windows host [doc](https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html), [add_host](https://github.com/hmharsh/Ansible-important-features/blob/master/add%20host.txt)
 ## References
 - https://docs.ansible.com/
 - https://medium.com/@me.sanjeev3d/ansible-configuration-management-945b56eed6d7
