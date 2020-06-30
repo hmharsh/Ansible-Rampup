@@ -41,7 +41,7 @@
 - Setup text editor for ansible yaml (eg for vim add `autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab` in $HOME/.vimrc)
 - Create two users ansible_password and ansible_key in remote vm (without granting sudo access) and make sure st user is accessavle by ssh username and password, and for 2nd user ansible_key generate a new public private key private key parir and try to login here by ssh using private key 
 ### Questions
-- Write a adhoc command to gather facts of localhost using setup module
+- Write a adhoc command to gather facts of localhost using setup module and try to get specific value using filter attribute of setup module
 - Write Adhoc command to copy any file to suitable path of remote machine/vm whose IP specified in inventory present in the current directory 
   ```
     1. To override values in ansible.cfg for single usecase, copy ansible.cfg to current directory, configure absolute or relative path of inventory in ansible.cfg
@@ -53,9 +53,10 @@
 2. Explore remote_src option of copy module
 ```
 - Explore and use following frequently used modules from official Ansible doc
+  - debug
   - set_fact
   - copy
-  - Synopsis
+  - synchronize
   - file
   - lineinfile
   - fetch
