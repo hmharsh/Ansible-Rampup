@@ -1,5 +1,4 @@
 # Ansible
-# Docker
 
 ### Contents
 - [Introduction](#introduction)
