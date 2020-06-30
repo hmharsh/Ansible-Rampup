@@ -75,7 +75,7 @@
 -  [Include and Import](https://docs.ansible.com/ansible/latest/modules/include_module.html)
 -  [privilege escalation](https://docs.ansible.com/ansible/latest/user_guide/become.html#using-become)
 -  [Jinja templating](https://docs.ansible.com/ansible-container/container_yml/template.html)
--  [Input from console](https://docs.ansible.com/ansible/latest/user_guide/playbooks_prompts.html#:~:text=The%20user%20input%20is%20hidden,visible%20by%20setting%20private%3A%20no%20.&text=Prompts%20for%20individual%20vars_prompt%20variables,as%20cron%20or%20Ansible%20Tower).)
+-  [Input from console](https://docs.ansible.com/ansible/latest/user_guide/playbooks_prompts.html#:~:text=The%20user%20input%20is%20hidden,visible%20by%20setting%20private%3A%20no%20.&text=Prompts%20for%20individual%20vars_prompt%20variables,as%20cron%20or%20Ansible%20Tower)
 #### Assignnment
 
 ```
