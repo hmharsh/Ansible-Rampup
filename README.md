@@ -27,27 +27,32 @@
 -  [Run first playbook](https://docs.ansible.com/ansible/latest/network/getting_started/first_playbook.html)
 -  [Working with modules](https://docs.ansible.com/ansible/latest/user_guide/modules.html)
 -  [Ansible connection](https://docs.ansible.com/ansible/latest/user_guide/connection_details.html)
+-  [Register variables](https://www.linuxtopic.com/2019/02/ansible-registrar-variables.html)
 -  [Ansible Vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html)
--  [privilege escalation](https://docs.ansible.com/ansible/latest/user_guide/become.html#using-become)
--  [setup module to gather facts] (https://docs.ansible.com/ansible/latest/modules/setup_module.html)
+-  [setup module to gather facts](https://docs.ansible.com/ansible/latest/modules/setup_module.html)
 -  [Special variables](https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html)
 -  [Ansible actions/Meta](https://docs.ansible.com/ansible/latest/modules/meta_module.html)
 
 
 #### Assignnments
-- write a adhoc command to gather facts of localhost using setup module
+### Setup
+- Require 2 vm in same network
+- Install ansible on 1st (host vm)
+- Make sure python is available on 2nd (remote vm)
+- Create two users ansible_password and ansible_key in remote vm (without granting sudo access) and make sure st user is accessavle by ssh username and password, and for 2nd user ansible_key generate a new public private key private key parir and try to login here by ssh using private key 
+### Questions
+- Write a adhoc command to gather facts of localhost using setup module
 - Write Adhoc command to copy any file to suitable path of remote machine/vm whose IP specified in inventory present in the current directory 
   ```
     1. To override values in ansible.cfg for single usecase, copy ansible.cfg to current directory, configure absolute or relative path of inventory in ansible.cfg
-    2. copy module in ansible
-    3. learn to configure the connection from inventory, either connect remote machine by it's ssh username and passsweod or connect by private key of ssh account
+    . Learn to configure the connection from inventory, either connect remote machine by it's ssh username and passsweod or connect by private key of ssh account
   ```  
 - Write a playbook to create a file in ansible on host machine (where ansible is running), which contain IP address of host machine all this in 1st play of the playbook and 2nd play should copy this file from this host machine to remote machine
 ```
-1. check ansible_connection = local // for faster connection on localhost
-2. explore remote_src option of copy module
+1. Check ansible_connection = local // for faster connection on localhost
+2. Explore remote_src option of copy module
 ```
-- explore and use following frequently used modules from official Ansible doc
+- Explore and use following frequently used modules from official Ansible doc
   - copy
   - Synopsis
   - file
@@ -57,10 +62,17 @@
   - package
   - uri
   - shell/command
+  - service
 
-## Flow control in playbook
--   
-
+## Manage Flow control and more
+-  [conditionals](https://docs.ansible.com/ansible/latest/user_guide/playbooks_conditionals.html) 
+-  [Looping](https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html)
+-  [Task delegation](https://docs.ansible.com/ansible/latest/user_guide/playbooks_delegation.html)
+-  [Include and Import](https://docs.ansible.com/ansible/latest/modules/include_module.html)
+-  [privilege escalation](https://docs.ansible.com/ansible/latest/user_guide/become.html#using-become)
+-  [Jinja templating](https://docs.ansible.com/ansible-container/container_yml/template.html)
+#### Assignnments
+- write a playbook in ansible to install httpd or nginx on remote vm, generate a index.html file which will be hosted later, content of this file should be IP address and hostname of the remote vm (where file will be hosted), copy this file on appropriate path of remote vm and start the service.
 
 
 ## Way to Implement large Automation
