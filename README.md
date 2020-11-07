@@ -1,4 +1,5 @@
 # Ansible
+Anyone who is interested in operating machines remotely, having basic knwledge of linux can follow these steps to learn Ansible, and perform interesting set of operations remotely.
 
 ### Contents
 - [Introduction](#introduction)
