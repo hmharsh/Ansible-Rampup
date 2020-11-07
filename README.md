@@ -1,7 +1,7 @@
 # Ansible
 Anyone who is interested in operating machines remotely, having basic knwledge of linux can follow these steps to learn Ansible, and perform interesting set of operations remotely.
 
-### Contents
+## Contents
 - [Introduction](#introduction)
 - [Basic implementation](#basic-implementation)
 - [Flow control in playbook](#flow-control-in-playbook)
@@ -9,7 +9,7 @@ Anyone who is interested in operating machines remotely, having basic knwledge o
 - [Ansible GUI ](#ansible-gui )
 - [References](#references)
 
-
+---- Let's Start ----------------------------------------------
 ## Introduction
 -  [Ansible quickstart](https://docs.ansible.com/ansible/devel/user_guide/quickstart.html)
 -  [YAML basics](https://www.tutorialspoint.com/ansible/ansible_yaml_basics.htm)
