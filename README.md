@@ -6,7 +6,8 @@ Anyone who is interested in operating machines remotely, having basic knwledge o
 - [Basic implementation](#basic-implementation)
 - [Flow control in playbook](#flow-control-in-playbook)
 - [Way to Implement large Automation](#way-to-implement-large-automation)
-- [Ansible GUI ](#ansible-gui )
+- [Ansible GUI](#ansible-gui)
+- [Advance](#advance)
 - [References](#references)
 
 ---- Let's Start ----------------------------------------------
